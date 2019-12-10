@@ -30,9 +30,10 @@ A PyTorch re-implementation of RippleNet by Qibin Chen et al. is [here](https://
 
 ### Required packages
 The code has been tested running under Python 3.6.5, with the following packages installed (along with their dependencies):
-- tensorflow-gpu == 1.4.0
-- numpy == 1.14.5
-- sklearn == 0.19.1
+- tensorflow == 1.8.0
+- numpy == 1.15.1
+- scikit-learn == 0.19.2
+- scipy == 1.1.0
 
 
 ### Running the code
