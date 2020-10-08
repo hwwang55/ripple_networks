@@ -140,7 +140,7 @@ class RippleNet(object):
             self.l2_loss += tf.reduce_mean(tf.reduce_sum(self.h_emb_list[hop] * self.h_emb_list[hop]))
             self.l2_loss += tf.reduce_mean(tf.reduce_sum(self.t_emb_list[hop] * self.t_emb_list[hop]))
             self.l2_loss += tf.reduce_mean(tf.reduce_sum(self.r_emb_list[hop] * self.r_emb_list[hop]))
-            if self.item_update_mode == "replace nonlinear" or self.item_update_mode == "plus nonlinear":
+            if self.item_update_mode == "replace_transform" or self.item_update_mode == "plus_transform":
                 self.l2_loss += tf.nn.l2_loss(self.transform_matrix)
         self.l2_loss = self.l2_weight * self.l2_loss
 
